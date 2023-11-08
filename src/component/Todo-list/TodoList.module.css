@@ -1,0 +1,129 @@
+/* TodoList.module.css */
+
+.todo-list {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    min-height: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border: 2px solid #ccc;
+    border-radius: 24px;
+    text-align: center;
+  }
+
+  .header {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-container input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 20px;
+  }
+
+  .input-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .task-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+  }
+
+  .task-list li {
+    border: 2px solid #ccc;
+    flex: 1;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .task-list li button {
+    background-color: #ff3e3e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .task-content{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+  /* Estilo para tachar las tareas completas y hacerlas opacas */
+  .task-list li.completed {
+    opacity: 0.7;
+  }
+
+  /* Estilo para tachar el texto de la tarea completada */
+  .task-list li.completed .taskText {
+    text-decoration: line-through;
+  }
+
+  /* Estilos para los iconos */
+  .icon {
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .favorite {
+    color: red;
+  }
+
+  .completed {
+    color: green;
+  }
+
+  /* Estilos para la lista de tareas favoritas */
+  .favorite-tasks {
+    margin-top: 30px;
+  }
+
+  .favorite-header {
+    font-size: 22px;
+    color: red;
+  }
+
+  .favorite-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .favorite-item {
+    border: 2px solid red;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Otros estilos personalizados según tu preferencia */
